@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css">
+    <!-- LINK GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Playfair+Display:wght@500&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>LANDING PAGE | weCOFFEE</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- MODAL -->
+    <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="images/logo.png" alt="" width="30px" height="30px">
+        <h5 class="modal-title" id="exampleModalLabel">weCoffee</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-lg">
+          <div class="row g-0">
+            <div class="col-lg-4 col-md-3 col-sm-12  my-4">
+             <div class="img-modal"></div>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-8">
+              <div class="card card-signin my-4">
+                <div class="card-body">
+                  <h5 class="card-title text-center">time to order</h5>
+                  <form class="form-signin">
+                    <div class="form-label-group">
+                      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                      <label for="inputEmail">Email address</label>
+                    </div>
+                    <div class="form-label-group">
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Fullname" required>
+                      <label for="validationCustom01" class="form-label">Fullname</label>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <button class="btn btn-lg cta-btn btn-block text-uppercase" type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light ">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" width="59" height="59"  alt=""></a>
+        <button
+          class="navbar-toggler "
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto pe-5 fw-normal text-md-start"> 
+            <li class="nav-item" id="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item cta-btn text-md-start text-center" 
+            data-bs-toggle="modal" data-bs-target="#exampleModal"
+            >
+              <a class="nav-link  text-light fw-bold" href="#">Drink Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+<div class="retangle">
+  
+</div>
+
+    <!-- SECTION HERO -->
+    <section class="hero">
+      <div class="container-md">
+        <div class="row align-items-center">
+            <div class="img-bg-1">
+            <img src="images/bg-2.png" alt="">
+        </div>
+          <div class="col-lg-7 col-md-6 col-sm-6 title-hero text-xl-start text-center pb-5 kol-1 "
+          data-aos="fade-right"  data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+          data-aos-offset="0"
+          >
+            <h1 class="text-uppercase ">the best place for coffee</h1>
+            <h5 class="text-uppercase text-light ">
+              we provide many types of coffee that you can try
+            </h6>
+              <a class="btn cta-btn  text-light fw-bold px-3 py-2" 
+              data-bs-toggle="modal" data-bs-target="#exampleModal"
+              href="#">Drink Now</a>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-6 gs-1">
+            <div class="img-1-tray">
+            <img src="images/coffee-png.png" alt="" class="img-fluid img-1" />
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- END SECTION HERO -->
+
+    <!-- SECTION FEATURE -->
+    <section class="features">
+      <div class="container-sm">
+        <div class="row">
+          <div class="col-12 title-features"
+          data-aos="fade-up"  data-aos-duration="800"
+          data-aos-easing="ease-in-sine"
+          data-aos-offset="100"
+          >
+            <h1  class=" text-light text-center fw-bolder text-uppercase
+            ">the services we provide</h1>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6  aos-up">
+            <div class="item-container text-center">
+              <div class="icon mx-auto">
+                <img src="images/icon grid.png" alt="">
+              </div>
+              <div class="title-item text-light">
+                <h3 class="fw-bolder text-uppercase">20+</h3>
+                <h2 class="fw-bolder text-uppercase">types of coffee</h2>
+              </div>
+              <p class="text-light fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse sed omnis similique non aliquid a quo illo ut consectetur.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 aos-up ">
+            <div class="item-container text-center">
+              <div class="icon mx-auto">
+                <img src="images/icon chat.png" alt="">
+              </div>
+              <div class="title-item text-light">
+                <h3 class="fw-bolder text-uppercase">24/7</h3>
+                <h2 class="fw-bolder text-uppercase">Online Services</h2>
+              </div>
+              <p class="text-light fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse sed omnis similique non aliquid a quo illo ut consectetur.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 aos-up ">
+            <div class="item-container text-center">
+              <div class="icon mx-auto">
+                <img src="images/icon delivery.png" alt="">
+              </div>
+              <div class="title-item text-light">
+                <h3 class="fw-bolder text-uppercase">24/7</h3>
+                <h2 class="fw-bolder text-uppercase">Fast delivery</h2>
+              </div>
+              <p class="text-light fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse sed omnis similique non aliquid a quo illo ut consectetur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION FEATURE -->
+
+
+    <!-- SECTION TOP CHOICE -->
+    <section class="top-choice">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12 "
+          data-aos="fade-right"  data-aos-duration="800"
+          data-aos-easing="ease-in-sine"
+          data-aos-offset="100">
+            <h1 class="text-light text-md-start text-center  pb-5 fw-bolder text-uppercase">top choice</h1>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center aos-menu">
+            <div class="card p-2 kartu">
+              <img src="images/cup-1.png" alt="" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title text-light fw-bolder ">Coffee Latte</h4>
+                <a href="#" class="btn cta-btn px-3 py-2">Order</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center aos-menu">
+            <div class="card p-2 kartu">
+              <img src="images/cup-2.png" alt="" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title text-light fw-bolder ">Arabica</h4>
+                <a href="#" class="btn cta-btn px-3 py-2">Order</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center aos-menu">
+            <div class="card p-2 kartu">
+              <img src="images/cup-3.png" alt="" class="card-img-top" width="255px" 
+              height="223px" >
+              <div class="card-body">
+                <h4 class="card-title text-light fw-bolder ">Americano</h4>
+                <a href="#" class="btn cta-btn px-3 py-2">Order</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center aos-menu">
+            <div class="card p-2 kartu">
+              <img src="images/cup-4.png" alt="" class="card-img-top" width= "252px"
+              height="252px">
+              <div class="card-body">
+                <h4 class="card-title text-light fw-bolder ">Espresso Latte </h4>
+                <a href="#" class="btn cta-btn px-3 py-2">Order</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION CHOICE -->
+
+    <!-- SECTION SOCIAL PROOF-1 -->
+    <section class="sosial-proof">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center pt-5"  data-aos="fade-up"  data-aos-duration="800"
+          data-aos-easing="ease-in-sine"
+          data-aos-offset="100">
+<h1 class="title text-center fw-bolder text-uppercase ">
+  more than 200 cups of coffee sold in a day
+</h1>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto repudiandae error voluptatem praesentium est facere?</p>
+<a class="btn cta-btn  text-light fw-bold px-3 py-2"
+data-bs-toggle="modal" data-bs-target="#exampleModal"
+href="#">Drink Now</a>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- END SECTION SOCIAL PROOF -->
+
+
+    <!-- SECTION SOCIAL PROOF 2 -->
+    <section class="social-proof-2">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12"
+          data-aos="fade-up"  data-aos-duration="800"
+          data-aos-easing="ease-in-sine"
+          data-aos-offset="100"
+          >
+<h1 class="text-light fw-bold text-uppercase text-center pb-5
+">what people say about us</h1>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 aos-avatar " >
+            <div class="card p-2">
+              <div class="tray-image">
+              <img src="images/avatar-1.png" alt="" class="card-img-top">
+            </div>
+              <div class="card-body text-light text-center">
+                <h5 class="card-title text-light ">@Jacob </h5>
+              <p>“almost every day i drink coffee and here i can get it”</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 aos-avatar ">
+            <div class="card p-2">
+              <div class="tray-image">
+              <img src="images/avatar-2.png" alt="" class="card-img-top">
+            </div>
+              <div class="card-body text-light text-center">
+                <h5 class="card-title text-light ">@Freida Varnes </h5>
+              <p>“the coffee here is really good”</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 aos-avatar ">
+            <div class="card p-2">
+              <div class="tray-image">
+              <img src="images/avatar-3.png" alt="" class="card-img-top">
+            </div>
+              <div class="card-body text-light text-center">
+                <h5 class="card-title text-light ">@Hannah Burress</h5>
+              <p>“almost every day i drink coffee and here i can get it”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END SOCIAL PROOF -->
+
+<!-- SECTION OUR STORY -->
+<section class="our-story">
+  <div class="container-md">
+    <div class="row align-items-center 
+    ">
+
+      <div class="col-lg-2 col-md-4 col-sm-3"
+      data-aos="zoom-in"  data-aos-duration="800"
+      data-aos-easing="ease-in"
+
+      >
+        <div class="img-tray">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4  col-sm-6"
+      data-aos="zoom-in"  data-aos-duration="800"
+      data-aos-easing="ease-in"
+
+      >
+        <div class="img-tray-2">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-3"
+      data-aos="zoom-in"  data-aos-duration="800"
+      data-aos-easing="ease-in"
+      >
+        <div class="img-tray-3">
+        </div>
+      </div>
+      <div class="col-lg-5 p-1 text-md-start text-center"
+      data-aos="fade-left"  data-aos-duration="800"
+      data-aos-easing="ease-in"
+
+      >
+        <h1 class="fw-bolder text-uppercase  text-light">Our Story</h1>
+        <p class="fw-light text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lectus ut ac suspendisse aliquam vitae, dignissim fermentum. Proin lectus ut ac suspendisse aliquam vitae, dignissim fermentum.</p>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- END SECTION OUR STORY -->
+<!-- SECTION FOOTER -->
+<section class="footer">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-lg-2  logo-ft">
+        <div class="logo-footer">
+          <img src="images/logo-light.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-5 text-md-start text-center alamat">
+        <h6 class="text-light fw-bold text-uppercase">123 Market St. #22B <br> 
+          Charlottesville, California 44635</h6>
+      </div>
+      <div class="col-lg-5 menus">
+        <nav class="menu-1 d-flex justify-content-md-evenly "> 
+          <ul class="navbar-nav-1">
+            <li ><a  href="#">About</a></li>
+            <li ><a  href="#">Growers</a></li>
+            <li ><a  href="#">Merchants</a></li>
+            <li ><a  href="#">Partners</a></li>
+            <li ><a  href="#">Contact</a></li>
+          </ul>
+          <ul class="navbar-nav-2" >
+            <li ><a    href="#">Facebook</a></li>
+            <li ><a  href="#">Twitter</a></li>
+            <li ><a  href="#">Linkedin</a></li>
+            <li ><a  href="#">Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+        <div class="col-lg-2 text-light">
+        </div>
+        <div class="col-lg-5 text-light pt-5">
+          <h6 class="fw-light text-decoration-underline ">(434) 546-4356</h6>
+          <h6 class="fw-light text-decoration-underline ">contact@lift.agency</h6>
+        </div>
+        <div class="col-lg-5 text-light pt-5 text-center">
+          <h6 class="fw-light">© 2020 weCoffee. All rights reserved.</h6>
+        </div>
+    
+    </div>
+  </div>
+</section>
+<!-- END SECTION FOOTER -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- LINK JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LINK JQUERY -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- link Aos-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          once: true
+        }
+      );
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js"
+      integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
